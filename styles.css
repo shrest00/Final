@@ -1,0 +1,395 @@
+body {
+    margin: 1;
+    padding: 0px;
+    font-family: 'Arial';
+    background-color:#ffffff;
+}
+
+header {
+   
+    color: rgb(30, 30, 30);
+    padding: 0.3em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; 
+    margin-right: 15px; 
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 50%;
+    margin-right: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    align-content: center;
+    margin-right: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(73, 71, 71);
+    font-weight: medium;
+   
+}
+.text-container {
+    position: absolute;
+    padding: 50px;
+    height: 40%;
+    width: 50%;
+    bottom: 20%;
+    left: 40%;
+    background-color: hsl(150, 17%, 98%, 0.5);
+    padding: 20px;
+    border-radius: 2px;
+    z-index: 1;
+    color: rgb(96, 94, 94);
+}
+
+.text {
+    position: absolute;
+    height: 60%;
+    width: 45%;
+    top: 15%;
+    left: 50%;
+    background-color:  rgba(223, 238, 231, 0.5);
+    padding: 20px;
+    border-radius: 2px;
+    color: rgb(96, 94, 94);
+}
+
+.content-container{
+    position: absolute;
+    width: 50px;
+    height: 20%;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.small-image {
+    width: 600px; 
+    height: auto; 
+}
+
+
+.video-container {
+    position: absolute; 
+    width: 50%; 
+    height: 80%; 
+    margin: 0 auto; 
+    background-color: rgb(204, 203, 204); 
+    overflow: hidden; 
+    
+}
+
+.image-container img{
+    position: absolute;
+    height: auto;
+    width: 30%;
+    top: 5%;
+    right: 80px;
+
+}
+
+.box-content{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 70%;
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    color: rgb(96, 94, 94);
+}
+.box-content p{
+      text-align: center;
+}
+
+
+video {
+    margin: 10;
+    width: 80%;
+    height: 100%;
+}
+
+
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.half-box {
+    position: absolute;
+    top:60px ;
+    right: 10px;
+    width: 50%;
+    height: 70%;
+    background-color: #d5ebe0; 
+    z-index: -1; 
+}
+
+.content {
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 60px;
+    display: flex;
+    align-content: flex-start;
+}
+
+.flip-card {
+    display: flex;
+    align-content: flex-start;
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    margin: 0  20px;
+    position: relative; 
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.flip-card:hover .flip-card-front img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: hsla(0, 100%, 95%, 0.3);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.box{
+    width: 60%;
+    
+}
+
+.box p{
+    padding: 40px;
+    margin: 50px;
+
+}
+
+.box img{
+    margin: 50px;
+    position: absolute;
+    bottom: 1px ;
+    left: 80px;
+    width: 25%;
+    height: 35%;
+    
+}
+
+.half-box2 {
+    position: absolute;
+    bottom: 20px ;
+    left: 10px;
+    width: 55%;
+    height: 40%;
+    background-color: hsl(160, 2%, 73%, 0.5);
+    z-index: -1;
+
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+.category {
+    
+    width: 40%
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+  
+.category img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+
+.other-brand {
+    background-color: rgb(177, 201, 182, 0.5);
+    padding: 10px;
+}
+ 
+
+h4{
+  
+    font-size: medium;
+}
+.photography {
+    background-color: rgb(138, 185, 195, 0.5);
+    padding: 10px;
+}
+
+
+
+.animate-image {
+    animation: slideIn 1s ease-in-out;
+}
+
+.animate-box-content {
+    animation: fadeInUp 5s ease-in-out;
+}
+
+.animate-box-image {
+    animation: slideInLeft 5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    
+    .content-container {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        left: 0;
+    }
+
+    .video-container,
+    .image-container img {
+        width: 100%;
+    }
+
+    .box-content {
+        top: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .half-box,
+    .half-box2 {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .flip-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .grid-container {
+        flex-direction: column;
+    }
+    
+    .explore-grid{
+        flex-direction: column;
+    
+    }
+    .category {
+        width: 100%;
+    }
+}
+
+
+@keyframes flipCard {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
